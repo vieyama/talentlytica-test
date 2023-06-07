@@ -1,0 +1,72 @@
+.container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 65vw;
+}
+
+.student-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.student-table,
+th {
+  padding: 8px 20px;
+}
+
+.student-table,
+td {
+  padding: 8px 20px;
+}
+
+.student-body {
+  border: 1px solid #949494;
+}
+
+.select-aspect {
+  width: 100%;
+  height: 30px;
+  font-size: 14px;
+  color: #171717;
+  padding: 0px 5px;
+}
+
+.user-wrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+}
+
+.button-save-wrapper {
+  width: 100%;
+  display: flex;
+  margin-top: 25px;
+  justify-content: flex-end;
+}
+
+.button-save {
+  background: black;
+  color: white;
+  padding: 8px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.description {
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
