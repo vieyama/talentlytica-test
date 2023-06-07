@@ -48,7 +48,8 @@ const dummyUser = [
 ];
 
 const HomeView = () => {
-  const [students, setStudents] = useState > dummyUser;
+  const [students, setStudents] = useState(dummyUser);
+  const [dataAspectFinal, setDataAspectFinal] = useState();
 
   const handleChangeAssessment = (event, userId) => {
     const aspectValueName = event.target.name;
@@ -76,8 +77,7 @@ const HomeView = () => {
           {}
         );
     }
-    console.log(aspectsFinal);
-    return aspectsFinal;
+    return setDataAspectFinal(aspectsFinal);
   };
 
   return (
@@ -157,6 +157,7 @@ const HomeView = () => {
             Simpan
           </button>
         </div>
+        {dataAspectFinal && JSON.stringify(dataAspectFinal)}
       </main>
     </div>
   );
